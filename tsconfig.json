@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "target": "ES2020",                      // Specifies ECMAScript target version
+      "module": "commonjs",                    // Specifies module code generation
+      "strict": true,                          // Enables all strict type-checking options
+      "esModuleInterop": true,                 // Enables interoperability between CommonJS and ES Modules
+      "forceConsistentCasingInFileNames": true,// Ensures consistent casing in file names
+      "outDir": "dist",                        // Redirects output structure to the 'dist' directory
+      "skipLibCheck": true,                    // Skips type checking of declaration files
+      "resolveJsonModule": true                // Allows importing JSON modules
+    },
+    "include": ["./scripts", "./contracts", "./hardhat.config.ts"], // Files to include in compilation
+    "files": ["./hardhat.config.ts"]            // Explicitly includes the Hardhat config file
+  }
+  
