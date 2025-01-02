@@ -3,20 +3,21 @@
   "version": "1.0.0",
   "description": "A demonstration project using Hardhat with TypeScript for Solidity development.",
   "scripts": {
-    "compile": "hardhat compile", 
-    "deploy:fundraiser": "hardhat run scripts/deploySimpleFundraiser.ts", 
+    "compile": "hardhat compile",
+    "deploy:fundraiser": "hardhat run scripts/deploySimpleFundraiser.ts --network sepolia",
     "lint": "eslint . --ext .ts,.tsx,.js,.jsx"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@dotenvx/dotenvx": "^1.32.0",
     "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@types/node": "^22.10.3",
     "eslint": "^9.17.0",
     "hardhat": "^2.22.17",
     "ts-node": "^10.9.2",
-    "typescript": "^5.7.2",
     "typechain": "^8.3.2",
-    "@types/node": "^22.10.3"
+    "typescript": "^5.7.2"
   }
 }
